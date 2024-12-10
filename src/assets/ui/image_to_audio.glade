@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkMenu">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+  </object>
+  <object class="GtkTreeViewColumn" id="treeviewcolumn1">
+    <property name="title" translatable="yes">column</property>
+  </object>
+  <object class="GtkWindow" id="window_main">
+    <property name="can-focus">False</property>
+    <property name="resizable">False</property>
+    <property name="default-width">1000</property>
+    <property name="default-height">-1</property>
+    <property name="icon">st_img.png</property>
+    <child>
+      <object class="GtkBox" id="window_main_section">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkLabel" id="name_title">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="margin-top">11</property>
+            <property name="margin-bottom">6</property>
+            <property name="hexpand">False</property>
+            <property name="vexpand">False</property>
+            <property name="label" translatable="yes">Wave 2 Image</property>
+            <property name="justify">center</property>
+            <attributes>
+              <attribute name="font-desc" value="Tahoma Bold 10"/>
+              <attribute name="style" value="normal"/>
+              <attribute name="foreground" value="#000000000000"/>
+              <attribute name="size" value="20500"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="navigation_manu">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="hexpand">False</property>
+            <property name="vexpand">False</property>
+            <child>
+              <object class="GtkStackSwitcher" id="manu_switch">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="halign">center</property>
+                <property name="margin-top">8</property>
+                <property name="margin-bottom">13</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">False</property>
+                <property name="icon-size">2</property>
+                <property name="stack">main_stack</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkStack" id="main_stack">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkBox" id="wav_img_page">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="orientation">vertical</property>
+                <child>
+                  <object class="GtkBox" id="add_box">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="margin-start">10</property>
+                    <property name="margin-end">10</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkFrame" id="add_fraim">
+                        <property name="name">dfdf</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label-xalign">0.019999999552965164</property>
+                        <property name="label-yalign">0.40000000596046448</property>
+                        <property name="shadow-type">out</property>
+                        <child>
+                          <object class="GtkAlignment" id="align_add">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="left-padding">12</property>
+                            <child>
+                              <object class="GtkBox" id="input_box_img">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="margin-start">10</property>
+                                <property name="margin-end">15</property>
+                                <property name="margin-top">4</property>
+                                <property name="orientation">vertical</property>
+                                <child>
+                                  <object class="GtkLabel" id="input_img_name">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="halign">start</property>
+                                    <property name="hexpand">True</property>
+                                    <property name="vexpand">False</property>
+                                    <property name="label" translatable="yes">Drag-and-drop PNG here or Click to open (button)</property>
+                                    <property name="ellipsize">start</property>
+                                    <attributes>
+                                      <attribute name="font-desc" value="System-ui 10"/>
+                                    </attributes>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkFileChooserButton" id="input_img_input">
+                                    <property name="width-request">27</property>
+                                    <property name="height-request">15</property>
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="margin-top">5</property>
+                                    <property name="margin-bottom">10</property>
+                                    <property name="title" translatable="yes"/>
+                                    <property name="width-chars">63</property>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="err_img_input">
+                                    <property name="can-focus">False</property>
+                                    <property name="label" translatable="yes">Please select a .png file</property>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">2</property>
+                                  </packing>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child type="label">
+                          <object class="GtkLabel" id="add_name">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="halign">center</property>
+                            <property name="valign">center</property>
+                            <property name="margin-bottom">9</property>
+                            <property name="hexpand">False</property>
+                            <property name="vexpand">False</property>
+                            <property name="label" translatable="yes">Add Image</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Segoe UI Variable Display Semi-Bold 10"/>
+                            </attributes>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox" id="conversion_box">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="margin-left">10</property>
+                    <property name="margin-right">10</property>
+                    <property name="margin-start">10</property>
+                    <property name="margin-end">10</property>
+                    <property name="margin-top">14</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkFrame" id="conversion_frame">
+                        <property name="name">dfdf</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label-xalign">0.019999999552965164</property>
+                        <property name="label-yalign">0.37000000476837158</property>
+                        <property name="shadow-type">in</property>
+                        <child>
+                          <object class="GtkAlignment" id="conversion_align">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="left-padding">12</property>
+                            <child>
+                              <object class="GtkBox" id="conversion_box_edit">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="margin-left">10</property>
+                                <property name="margin-right">15</property>
+                                <property name="margin-start">10</property>
+                                <property name="margin-end">15</property>
+                                <property name="margin-top">4</property>
+                                <property name="orientation">vertical</property>
+                                <child>
+                                  <object class="GtkLabel" id="conversion_sample_name">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="halign">start</property>
+                                    <property name="hexpand">True</property>
+                                    <property name="vexpand">False</property>
+                                    <property name="label" translatable="yes">Sampling Rate</property>
+                                    <property name="ellipsize">start</property>
+                                    <attributes>
+                                      <attribute name="font-desc" value="System-ui 10"/>
+                                    </attributes>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="padding">1</property>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkComboBoxText" id="conversion_samplr_input">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="active">4</property>
+                                    <property name="button-sensitivity">on</property>
+                                    <property name="has-entry">True</property>
+                                    <items>
+                                      <item translatable="yes">8,000 Hz Telephony</item>
+                                      <item id="&lt;Enter ID&gt;" translatable="yes">11,025 Hz Standard Voice Quality for Speech</item>
+                                      <item translatable="yes">12,000 Hz Low-Fidelity Audio for Streaming</item>
+                                      <item translatable="yes">16,000 Hz Wideband Audio for VoIP</item>
+                                      <item translatable="yes">22,050 Hz Standard Audio Quality for Music (Low Bitrate)</item>
+                                      <item translatable="yes">24,000 Hz Professional Voice Recording and Broadcast</item>
+                                      <item translatable="yes">32,000 Hz Standard for Digital Audio Broadcasting (DAB)</item>
+                                      <item translatable="yes">44,100 Hz Standard CD Quality Audio</item>
+                                      <item translatable="yes">48,000 Hz Professional Video Audio and Film Production</item>
+                                      <item translatable="yes">96,000 Hz High-Definition Audio for Studio Recording</item>
+                                      <item translatable="yes">192,000 Hz Ultra High-Resolution Audio for Audiophiles</item>
+                                      <item translatable="yes">176,400 Hz High-Fidelity Audio (Double the CD Rate)</item>
+                                      <item translatable="yes">384,000 Hz Advanced Audio Research and Development</item>
+                                    </items>
+                                    <child internal-child="entry">
+                                      <object class="GtkEntry" id="samplerate_img_input">
+                                        <property name="can-focus">True</property>
+                                        <property name="text" translatable="yes">192,000 Hz Ultra High-Resolution Audio for Audiophiles</property>
+                                        <property name="primary-icon-stock">gtk-page-setup</property>
+                                        <property name="secondary-icon-stock">gtk-remove</property>
+                                      </object>
+                                    </child>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="conversion_mode_name">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="halign">start</property>
+                                    <property name="margin-top">5</property>
+                                    <property name="hexpand">True</property>
+                                    <property name="vexpand">False</property>
+                                    <property name="label" translatable="yes">DS Mode</property>
+                                    <property name="ellipsize">start</property>
+                                    <attributes>
+                                      <attribute name="font-desc" value="System-ui 10"/>
+                                    </attributes>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="padding">1</property>
+                                    <property name="position">2</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkComboBoxText" id="conversion_samplr_mode">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="active">4</property>
+                                    <property name="button-sensitivity">on</property>
+                                    <property name="has-entry">True</property>
+                                    <items>
+                                      <item translatable="yes">Array</item>
+                                      <item translatable="yes">Linked List</item>
+                                      <item translatable="yes">Stack</item>
+                                      <item translatable="yes">Queue</item>
+                                    </items>
+                                    <child internal-child="entry">
+                                      <object class="GtkEntry" id="samplerate_img_mode_">
+                                        <property name="can-focus">False</property>
+                                        <property name="text" translatable="yes">Array</property>
+                                        <property name="primary-icon-stock">gtk-preferences</property>
+                                        <property name="secondary-icon-stock">gtk-remove</property>
+                                      </object>
+                                    </child>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">3</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkButton" id="conversion_button_img_wav">
+                                    <property name="label" translatable="yes">Convert</property>
+                                    <property name="width-request">205</property>
+                                    <property name="height-request">45</property>
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">True</property>
+                                    <property name="receives-default">True</property>
+                                    <property name="halign">center</property>
+                                    <property name="valign">center</property>
+                                    <property name="margin-top">10</property>
+                                    <property name="margin-bottom">5</property>
+                                    <property name="hexpand">True</property>
+                                    <property name="vexpand">True</property>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="padding">7</property>
+                                    <property name="position">4</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkBox" id="conversion_img_progress_box">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="orientation">vertical</property>
+                                    <child>
+                                      <object class="GtkProgressBar" id="progress_bar_img">
+                                        <property name="visible">True</property>
+                                        <property name="can-focus">False</property>
+                                        <property name="margin-left">20</property>
+                                        <property name="margin-right">20</property>
+                                        <property name="margin-start">20</property>
+                                        <property name="margin-end">20</property>
+                                        <property name="margin-top">5</property>
+                                        <property name="hexpand">False</property>
+                                        <property name="vexpand">False</property>
+                                        <property name="show-text">True</property>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">False</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">0</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <object class="GtkLabel" id="lebel_img_status">
+                                        <property name="visible">True</property>
+                                        <property name="can-focus">False</property>
+                                        <property name="margin-bottom">5</property>
+                                        <property name="label" translatable="yes">Converting...</property>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">False</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">1</property>
+                                      </packing>
+                                    </child>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">5</property>
+                                  </packing>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child type="label">
+                          <object class="GtkLabel" id="conversion_name">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="halign">center</property>
+                            <property name="valign">center</property>
+                            <property name="margin-bottom">9</property>
+                            <property name="hexpand">False</property>
+                            <property name="vexpand">False</property>
+                            <property name="label" translatable="yes">Conversion Options</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Segoe UI Variable Display Semi-Bold 10"/>
+                            </attributes>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox" id="output_audio">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="margin-left">10</property>
+                    <property name="margin-right">10</property>
+                    <property name="margin-start">10</property>
+                    <property name="margin-end">10</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkFrame" id="output_audio_frame">
+                        <property name="name">dfdf</property>
+                        <property name="can-focus">False</property>
+                        <property name="margin-top">5</property>
+                        <property name="label-xalign">0.019999999552965164</property>
+                        <property name="label-yalign">0.38999998569488525</property>
+                        <property name="shadow-type">in</property>
+                        <child>
+                          <object class="GtkAlignment" id="output_audio_algin">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="left-padding">12</property>
+                            <child>
+                              <object class="GtkBox" id="output_save_box">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="margin-left">10</property>
+                                <property name="margin-right">15</property>
+                                <property name="margin-start">10</property>
+                                <property name="margin-end">15</property>
+                                <property name="margin-top">4</property>
+                                <property name="orientation">vertical</property>
+                                <child>
+                                  <object class="GtkBox" id="output_save_box_lg">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="margin-bottom">10</property>
+                                    <child>
+                                      <object class="GtkScrolledWindow" id="sctral1">
+                                        <property name="width-request">450</property>
+                                        <property name="height-request">150</property>
+                                        <property name="visible">True</property>
+                                        <property name="can-focus">True</property>
+                                        <property name="halign">center</property>
+                                        <property name="valign">center</property>
+                                        <property name="hexpand">True</property>
+                                        <property name="vexpand">True</property>
+                                        <property name="shadow-type">in</property>
+                                        <child>
+                                          <object class="GtkTextView" id="text_vew_data">
+                                            <property name="visible">True</property>
+                                            <property name="can-focus">True</property>
+                                            <property name="hscroll-policy">natural</property>
+                                            <property name="vscroll-policy">natural</property>
+                                            <property name="editable">False</property>
+                                            <property name="left-margin">6</property>
+                                            <property name="right-margin">38</property>
+                                            <property name="cursor-visible">False</property>
+                                          </object>
+                                        </child>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">False</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">1</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <object class="GtkButton" id="save_wav_button">
+                                        <property name="label" translatable="yes">Save Audio</property>
+                                        <property name="width-request">185</property>
+                                        <property name="height-request">0</property>
+                                        <property name="visible">True</property>
+                                        <property name="can-focus">True</property>
+                                        <property name="receives-default">True</property>
+                                        <property name="halign">center</property>
+                                        <property name="valign">center</property>
+                                        <property name="hexpand">True</property>
+                                        <property name="vexpand">True</property>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">False</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">2</property>
+                                      </packing>
+                                    </child>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child type="label">
+                          <object class="GtkLabel" id="output_audioo_name">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="halign">center</property>
+                            <property name="valign">center</property>
+                            <property name="margin-bottom">9</property>
+                            <property name="hexpand">False</property>
+                            <property name="vexpand">False</property>
+                            <property name="label" translatable="yes">Audio Output</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Segoe UI Variable Display Semi-Bold 10"/>
+                            </attributes>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="saved_wav">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">File saved successfully</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="padding">4</property>
+                    <property name="position">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="info_name">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
+                    <property name="margin-top">15</property>
+                    <property name="margin-bottom">5</property>
+                    <property name="label" translatable="yes">This page is responsible for converting PNG images to WAV audio files. All rights reserved.© 2024 Converter</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">5</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="name">Image to Audio</property>
+                <property name="title" translatable="yes">Image to Audio</property>
+                <property name="needs-attention">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkBox" id="wav_im_page">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="orientation">vertical</property>
+                <child>
+                  <object class="GtkBox" id="add_audio_box">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="margin-left">10</property>
+                    <property name="margin-right">10</property>
+                    <property name="margin-start">10</property>
+                    <property name="margin-end">10</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkFrame" id="add_audio_bo">
+                        <property name="name">dfdf</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label-xalign">0.019999999552965164</property>
+                        <property name="label-yalign">0.40000000596046448</property>
+                        <property name="shadow-type">out</property>
+                        <child>
+                          <object class="GtkAlignment" id="add_audio_box_align">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="left-padding">12</property>
+                            <child>
+                              <object class="GtkBox" id="add_audio_box_align_box">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="margin-left">10</property>
+                                <property name="margin-right">15</property>
+                                <property name="margin-start">10</property>
+                                <property name="margin-end">15</property>
+                                <property name="margin-top">4</property>
+                                <property name="orientation">vertical</property>
+                                <child>
+                                  <object class="GtkLabel" id="input_lebel_name_2">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="halign">start</property>
+                                    <property name="hexpand">True</property>
+                                    <property name="vexpand">False</property>
+                                    <property name="label" translatable="yes">Drag-and-drop WAV audio here or Click to Add (button)</property>
+                                    <property name="ellipsize">start</property>
+                                    <attributes>
+                                      <attribute name="font-desc" value="System-ui 10"/>
+                                    </attributes>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkFileChooserButton" id="input_wav_input">
+                                    <property name="width-request">27</property>
+                                    <property name="height-request">15</property>
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="margin-top">5</property>
+                                    <property name="margin-bottom">10</property>
+                                    <property name="title" translatable="yes"/>
+                                    <property name="width-chars">63</property>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">1</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="err_wav_input">
+                                    <property name="can-focus">False</property>
+                                    <property name="margin-bottom">7</property>
+                                    <property name="label" translatable="yes">Please select a .png file</property>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">2</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkButton" id="conversion_button_wav_img">
+                                    <property name="label" translatable="yes">Convert</property>
+                                    <property name="width-request">205</property>
+                                    <property name="height-request">45</property>
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">True</property>
+                                    <property name="receives-default">True</property>
+                                    <property name="halign">center</property>
+                                    <property name="valign">center</property>
+                                    <property name="margin-top">10</property>
+                                    <property name="margin-bottom">5</property>
+                                    <property name="hexpand">True</property>
+                                    <property name="vexpand">True</property>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="padding">7</property>
+                                    <property name="position">3</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkBox" id="conversion_wav_progress_box">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="orientation">vertical</property>
+                                    <child>
+                                      <object class="GtkProgressBar" id="progress_bar_wav">
+                                        <property name="visible">True</property>
+                                        <property name="can-focus">False</property>
+                                        <property name="margin-left">20</property>
+                                        <property name="margin-right">20</property>
+                                        <property name="margin-start">20</property>
+                                        <property name="margin-end">20</property>
+                                        <property name="margin-top">5</property>
+                                        <property name="hexpand">False</property>
+                                        <property name="vexpand">False</property>
+                                        <property name="show-text">True</property>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">False</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">0</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <object class="GtkLabel" id="lebel_wav_status">
+                                        <property name="visible">True</property>
+                                        <property name="can-focus">False</property>
+                                        <property name="margin-bottom">5</property>
+                                        <property name="label" translatable="yes">Converting...</property>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">False</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">1</property>
+                                      </packing>
+                                    </child>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">4</property>
+                                  </packing>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child type="label">
+                          <object class="GtkLabel" id="add_audio_name_2">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="halign">center</property>
+                            <property name="valign">center</property>
+                            <property name="margin-bottom">9</property>
+                            <property name="hexpand">False</property>
+                            <property name="vexpand">False</property>
+                            <property name="label" translatable="yes">Add audio And Convert</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Segoe UI Variable Display Semi-Bold 10"/>
+                            </attributes>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox" id="output_image">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="margin-left">10</property>
+                    <property name="margin-right">10</property>
+                    <property name="margin-start">10</property>
+                    <property name="margin-end">10</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkFrame" id="ing_ouput_frame">
+                        <property name="name">dfdf</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="margin-top">5</property>
+                        <property name="label-xalign">0.019999999552965164</property>
+                        <property name="label-yalign">0.38999998569488525</property>
+                        <property name="shadow-type">in</property>
+                        <child>
+                          <object class="GtkAlignment" id="ing_ouput_frame_align">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="left-padding">12</property>
+                            <child>
+                              <object class="GtkBox" id="ing_ouput_frame_box">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="margin-left">10</property>
+                                <property name="margin-right">15</property>
+                                <property name="margin-start">10</property>
+                                <property name="margin-end">15</property>
+                                <property name="margin-top">4</property>
+                                <property name="orientation">vertical</property>
+                                <child>
+                                  <object class="GtkBox" id="ing_ouput_frame_bo">
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="margin-bottom">5</property>
+                                    <child>
+                                      <object class="GtkLabel" id="img_ouput|_name_2">
+                                        <property name="visible">True</property>
+                                        <property name="can-focus">False</property>
+                                        <property name="halign">center</property>
+                                        <property name="valign">center</property>
+                                        <property name="hexpand">True</property>
+                                        <property name="vexpand">True</property>
+                                        <property name="label" translatable="yes">output.png</property>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">False</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">0</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <object class="GtkButton" id="save_img_button">
+                                        <property name="label" translatable="yes">Save Image</property>
+                                        <property name="width-request">185</property>
+                                        <property name="height-request">0</property>
+                                        <property name="visible">True</property>
+                                        <property name="can-focus">True</property>
+                                        <property name="receives-default">True</property>
+                                        <property name="halign">center</property>
+                                        <property name="valign">center</property>
+                                        <property name="hexpand">True</property>
+                                        <property name="vexpand">True</property>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">False</property>
+                                        <property name="fill">True</property>
+                                        <property name="position">1</property>
+                                      </packing>
+                                    </child>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child type="label">
+                          <object class="GtkLabel" id="ing_ouput_name_2">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="halign">center</property>
+                            <property name="valign">center</property>
+                            <property name="margin-bottom">9</property>
+                            <property name="hexpand">False</property>
+                            <property name="vexpand">False</property>
+                            <property name="label" translatable="yes">Image Output</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Segoe UI Variable Display Semi-Bold 10"/>
+                            </attributes>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="saved_img">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">File saved successfully</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="padding">1</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="info_naem_">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="halign">center</property>
+                    <property name="valign">center</property>
+                    <property name="margin-top">15</property>
+                    <property name="margin-bottom">5</property>
+                    <property name="label" translatable="yes">This page is responsible for converting WAV images to PNG audio files. All rights reserved.© 2024 Converter</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">3</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="name">Audio to Image</property>
+                <property name="title" translatable="yes">Audio to Image</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
