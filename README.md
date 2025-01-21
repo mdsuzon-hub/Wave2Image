@@ -88,12 +88,6 @@ This project is licensed under the CC BY-NC License. See the [LICENSE](LICENSE) 
 - Developed as part of the **Data Structure Project** at **Daffodil International University**. 📚
 - Special thanks to the open-source community for making tools like MSYS2, GTK, and GCC available! 🌍
 
-### **Project Contributors**:
-- **Project Manager**: MD Mainul Islam
-- **Front-End Developer**: MD Tamim Hossan
-- **Back-End Developer**: MD Boni Amin
-- **Data Structure Architect**: MD Suzon Mia
-
 ## 🚀 **Release**:
 - **Get the latest release of Wave2Image!**  
   📥 **Download now**: [Wave2Image - Latest Release](https://github.com/mdsuzon-hub/Wave2Image/releases/tag/1.0)  
