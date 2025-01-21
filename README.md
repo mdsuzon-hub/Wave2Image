@@ -94,6 +94,11 @@ This project is licensed under the CC BY-NC License. See the [LICENSE](LICENSE) 
 - **Back-End Developer**: MD Boni Amin
 - **Data Structure Architect**: MD Suzon Mia
 
+## 🚀 **Release**:
+- **Get the latest release of Wave2Image!**  
+  📥 **Download now**: [Wave2Image - Latest Release](https://github.com/mdsuzon-hub/Wave2Image/releases)  
+  🔥 **New features and improvements included!**
+
 
 ---
 
