@@ -96,7 +96,7 @@ This project is licensed under the CC BY-NC License. See the [LICENSE](LICENSE) 
 
 ## 🚀 **Release**:
 - **Get the latest release of Wave2Image!**  
-  📥 **Download now**: [Wave2Image - Latest Release](https://github.com/mdsuzon-hub/Wave2Image/releases)  
+  📥 **Download now**: [Wave2Image - Latest Release](https://github.com/mdsuzon-hub/Wave2Image/releases/tag/1.0)  
   🔥 **New features and improvements included!**
 
 
